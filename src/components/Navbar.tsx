@@ -55,7 +55,11 @@ const Navbar = () => {
       </nav>
       <nav className="flex items-center gap-5">
         {Navlinks.map((link) => {
-          return <Link href={link.href}>{link.title}</Link>;
+          return (
+            <Link key={link.title} href={link.href}>
+              {link.title}
+            </Link>
+          );
         })}
       </nav>
       <nav className="flex items-center gap-5">

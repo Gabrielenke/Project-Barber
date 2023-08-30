@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface ActionButtonProps {
@@ -15,7 +16,7 @@ const ActionButton = ({
 }: ActionButtonProps) => {
   return (
     <button className={`${className} items-center bg-primary px-4 py-4`}>
-      {icon && <img src={icon} alt={iconAlt} />}
+      {icon && iconAlt && <Image src={icon} alt={iconAlt} />}
       {text}
     </button>
   );
