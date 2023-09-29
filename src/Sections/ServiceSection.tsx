@@ -15,24 +15,24 @@ const ServiceSection = () => {
           experience
         </p>
       </div>
-      <section className="mx-auto mt-20 flex h-[60vh] w-[60vw] flex-col flex-wrap  ">
+      <section className="mx-auto mt-20 flex w-full flex-col flex-wrap md:h-[60vh] md:w-[60vw]  ">
         <ServiceCard
           title="Haircut"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
           altImage="cutColumn"
           image="https://images.unsplash.com/photo-1533245270348-821d4d5c7514"
-          classNameDivWrapper="group relative mr-5 h-[52vh] w-[15vw]"
+          classNameDivWrapper="group relative mr-5 h-[30vh] md:h-[52vh] w-full md:w-[15vw]"
           className=""
           classNameH1="whitespace-nowrap"
           classNameDescription="hidden  flex-col group-hover:ml-3 group-hover:mt-10 group-hover:flex group-hover:text-left "
         />
-        <div className="mb-5 flex gap-5">
+        <div className="mb-5 mt-10 flex flex-wrap justify-around gap-5 md:mt-0 md:flex-nowrap">
           <ServiceCard
             title="Haircut"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut"
             image="https://images.unsplash.com/photo-1634302086887-13b5585a8831"
-            classNameDivWrapper="group relative h-[25vh] w-[20vw]"
+            classNameDivWrapper="group relative md:h-[25vh] md:w-[20vw]"
             className=""
             classNameH1="whitespace-nowrap"
             classNameDescription="hidden flex-col group-hover:ml-3 group-hover:mt-10 group-hover:flex group-hover:text-left"
@@ -42,19 +42,19 @@ const ServiceSection = () => {
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut25vw"
             image="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4"
-            classNameDivWrapper="group relative h-[25vh] w-[25vw]"
+            classNameDivWrapper="group relative md:h-[25vh] md:w-[25vw]"
             className=""
             classNameH1=""
             classNameDescription="hidden group-hover:mt-10 group-hover:block"
           />
         </div>
-        <div className="flex gap-5">
+        <div className="mb-5 mt-10 flex flex-wrap justify-around gap-5 md:mt-0 md:flex-nowrap">
           <ServiceCard
             title="Haircut"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut25vw"
             image="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4"
-            classNameDivWrapper="group relative h-[25vh] w-[25vw]"
+            classNameDivWrapper="group relative md:h-[25vh] md:w-[25vw]"
             className=""
             classNameH1=""
             classNameDescription="hidden group-hover:mt-10 group-hover:block"
@@ -64,7 +64,7 @@ const ServiceSection = () => {
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut"
             image="https://images.unsplash.com/photo-1634302086887-13b5585a8831"
-            classNameDivWrapper="group relative h-[25vh] w-[20vw]"
+            classNameDivWrapper="group relative md:h-[25vh] md:w-[20vw]"
             className=""
             classNameH1="whitespace-nowrap"
             classNameDescription="hidden flex-col group-hover:ml-3 group-hover:mt-10 group-hover:flex group-hover:text-left"

@@ -17,7 +17,10 @@ import PriceSection from "@/Sections/PriceSection";
 export default function Home() {
   return (
     <>
-      <section className="flex h-screen w-full items-center justify-center">
+      <section
+        id="home"
+        className="flex h-screen w-full items-center justify-center"
+      >
         <Swiper
           pagination={{
             clickable: true,
@@ -50,13 +53,19 @@ export default function Home() {
         </Swiper>
       </section>
 
-      <section className="mt-10 flex h-screen flex-col justify-center">
+      <section
+        id="services"
+        className="mt-10 flex min-h-screen flex-col justify-center md:h-screen"
+      >
         <ServiceSection />
       </section>
-      <section className="mx-auto min-h-screen w-[80vw]">
+      <section id="about" className="mx-auto min-h-screen w-[80vw]">
         <AboutSection />
       </section>
-      <section className="mx-auto mt-10 flex h-screen w-[80vw] flex-col  gap-10">
+      <section
+        id="contact"
+        className="mx-auto mt-10 flex h-screen w-[80vw] flex-col  gap-10"
+      >
         <PriceSection />
       </section>
     </>

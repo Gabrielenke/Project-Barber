@@ -1,5 +1,11 @@
 import React from "react";
-import { OpeningCard, GetInTouchCard } from "@/assets/export";
+import {
+  OpeningCard,
+  GetInTouchCard,
+  Facebook,
+  Linkedin,
+  Twitter,
+} from "@/assets/export";
 import ActionButton from "@/components/ActionButton";
 import Image from "next/image";
 const AboutSection = () => {
@@ -14,8 +20,9 @@ const AboutSection = () => {
           className="flex w-[40vw] flex-col gap-10  text-white"
         >
           <div className="border-l-2 border-solid border-primary">
-            <p className="ml-2 text-primary">Boardroom</p>
-            <h1 className="ml-2 text-6xl ">Story of our barbershop</h1>
+            <h1 className="ml-2 text-3xl md:text-6xl ">
+              Story of our barbershop
+            </h1>
           </div>
           <p className="max-w-[35vw] text-lg">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
@@ -61,10 +68,18 @@ const AboutSection = () => {
             <ActionButton className="h-24 w-1/2" text="Make an Appointment" />
           </div>
           <div className="flex gap-6 ">
-            <ActionButton className="h-10 w-10 rounded-md" text="ic" />
-            <ActionButton className="h-10 w-10 rounded-md" text="ic" />
-            <ActionButton className="h-10 w-10 rounded-md" text="ic" />
-            <ActionButton className="h-10 w-10 rounded-md" text="ic" />
+            <div className="h-10 w-10">
+              <Image src={Facebook} alt="" />
+            </div>
+            <div className="h-10 w-10">
+              <Image src={Linkedin} alt="" />
+            </div>
+            <div className="h-10 w-10">
+              <Image src={Twitter} alt="" />
+            </div>
+            <div className="h-10 w-10">
+              <Image src={Facebook} alt="" />
+            </div>
           </div>
         </div>
       </div>
