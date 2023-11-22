@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Logo } from "@/assets/export";
+import { logoo } from "@/assets/export";
 import Image from "next/image";
 import ScrollSlider from "./ScrollSlider";
 import ActionButton from "./ActionButton";
 
 const Navbar = () => {
-  const sections = ["home", "services", "about", "contact", "shop"];
+  const sections = ["home", "services", "about", "contact", "products"];
 
   const [activeSection, setActiveSection] = useState(sections[0]);
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -75,7 +75,7 @@ const Navbar = () => {
       >
         <nav className="flex items-center">
           <Link href="/">
-            <Image className="h-10 w-10" src={Logo} alt="Logo" />
+            <Image className="h-10 w-10" src={logoo} alt="Logo" />
           </Link>
         </nav>
         <nav className="hidden items-center gap-10 lg:flex">

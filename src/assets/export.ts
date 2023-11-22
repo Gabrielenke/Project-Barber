@@ -6,7 +6,9 @@ import Scissors from "./Scissors.svg";
 import Facebook from "./facebook.svg";
 import Linkedin from "./linkedin.svg";
 import Twitter from "./Twitter.svg";
-import Logo from "./Logo.png";
+import logoo from "./logoo.png";
+import publistory from "./publistory.png";
+import corte from "./corte.jpg";
 export {
   Beard,
   Eyebrown,
@@ -16,5 +18,7 @@ export {
   Facebook,
   Linkedin,
   Twitter,
-  Logo,
+  logoo,
+  publistory,
+  corte,
 };

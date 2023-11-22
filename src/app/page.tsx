@@ -13,6 +13,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import SwiperContent from "../components/SwiperContent";
 import AboutSection from "@/Sections/AboutSection";
 import PriceSection from "@/Sections/PriceSection";
+import ProductsSection from "@/Sections/ProductsSection";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
       >
         <PriceSection />
       </section>
+      <ProductsSection />
     </>
   );
 }

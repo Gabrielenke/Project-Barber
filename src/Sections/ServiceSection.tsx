@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
+import { corte } from "@/assets/export";
 
 const ServiceSection = () => {
   return (
@@ -20,7 +21,7 @@ const ServiceSection = () => {
           title="Haircut"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
           altImage="cutColumn"
-          image="https://images.unsplash.com/photo-1533245270348-821d4d5c7514"
+          image={corte}
           classNameDivWrapper="group relative mr-5 h-[30vh] md:h-[52vh] w-full md:w-[15vw]"
           className=""
           classNameH1="whitespace-nowrap"
@@ -31,7 +32,7 @@ const ServiceSection = () => {
             title="Haircut"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut"
-            image="https://images.unsplash.com/photo-1634302086887-13b5585a8831"
+            image={corte}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[20vw]"
             className=""
             classNameH1="whitespace-nowrap"
@@ -41,7 +42,7 @@ const ServiceSection = () => {
             title="Haircut"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut25vw"
-            image="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4"
+            image={corte}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[25vw]"
             className=""
             classNameH1=""
@@ -53,7 +54,7 @@ const ServiceSection = () => {
             title="Haircut"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut25vw"
-            image="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4"
+            image={corte}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[25vw]"
             className=""
             classNameH1=""
@@ -63,7 +64,7 @@ const ServiceSection = () => {
             title="Haircut"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
             altImage="cut"
-            image="https://images.unsplash.com/photo-1634302086887-13b5585a8831"
+            image={corte}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[20vw]"
             className=""
             classNameH1="whitespace-nowrap"

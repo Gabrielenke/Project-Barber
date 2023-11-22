@@ -11,7 +11,7 @@ interface Props {
 
 const PriceCard = ({ title, price, description, icon, iconAlt }: Props) => {
   return (
-    <div className="flex h-32 w-[38vw] flex-col items-center gap-2 bg-[#d9d9d9] px-4 py-2">
+    <div className="flex h-32 w-[38vw] flex-col items-center gap-2 bg-[#d9d9d9] px-4 py-1">
       <div className="flex w-full items-center justify-between ">
         <div className="flex items-center gap-2">
           <Image className="h-8 w-8" src={icon} alt={iconAlt} />
