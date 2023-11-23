@@ -1,9 +1,16 @@
 "use client";
 
-import { Facebook, Linkedin, Twitter } from "@/assets/export";
+import {
+  Facebook,
+  Linkedin,
+  Twitter,
+  instagram,
+  whatsapp,
+} from "@/assets/export";
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ModalProps {
   image: string;
@@ -27,23 +34,19 @@ export default function ModalComponent({ image, imageAlt }: ModalProps) {
               src={image}
               alt={imageAlt}
             />
-            <div className="flex items-center justify-between">
-              <div className="flex flex-col items-center gap-2">
-                <p>Preço</p>
-                <p>258R$</p>
-              </div>
+            <div className="flex items-center justify-center">
               <div className="flex flex-col items-center gap-2">
                 <p>Mais informacoes</p>
                 <div className="flex gap-6">
-                  <div className="h-6 w-6">
-                    <Image src={Facebook} alt="" />
-                  </div>
-                  <div className="h-6 w-6">
-                    <Image src={Linkedin} alt="" />
-                  </div>
-                  <div className="h-6 w-6">
-                    <Image src={Twitter} alt="" />
-                  </div>
+                  <Link href="https://wa.me/19981335512" className="h-6 w-6">
+                    <Image src={whatsapp} alt="" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/eulercortesamericana/"
+                    className="h-6 w-6"
+                  >
+                    <Image src={instagram} alt="" />
+                  </Link>
                 </div>
               </div>
             </div>

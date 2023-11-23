@@ -137,3 +137,7 @@ table {
   background-color: #fff;
   opacity: 1;
 }
+
+html {
+  scroll-behavior: smooth;
+}

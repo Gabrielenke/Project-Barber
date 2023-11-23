@@ -60,7 +60,6 @@ const PriceSection = () => {
         debitis sequi totam."
           />
         </div>
-        <ActionButton className="w-52 self-center" text="Make Appointment" />
       </div>
     </>
   );

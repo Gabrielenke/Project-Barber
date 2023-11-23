@@ -45,12 +45,7 @@ export default function Home() {
           <SwiperSlide className="flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1521490214993-bfb6f7dc096d)] bg-cover bg-center text-center text-white">
             <SwiperContent />
           </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1634484476106-e3a422c7430f)] bg-cover bg-center text-center text-white">
-            <SwiperContent />
-          </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1521490214993-bfb6f7dc096d)] bg-cover bg-center text-center text-white">
-            <SwiperContent />
-          </SwiperSlide>
+         
         </Swiper>
       </section>
 

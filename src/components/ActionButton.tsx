@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface ActionButtonProps {
@@ -6,6 +7,7 @@ interface ActionButtonProps {
   text?: string;
   icon?: string;
   iconAlt?: string;
+  link?:string | undefined;
 }
 
 const ActionButton = ({
@@ -13,14 +15,15 @@ const ActionButton = ({
   text,
   icon,
   iconAlt,
+  link
 }: ActionButtonProps) => {
   return (
-    <button className={`${className} items-center bg-primary px-4 py-4`}>
+    <Link href={link?link:""} target="_blank" className={`${className} items-center bg-primary px-4 py-4`}>
       {icon && iconAlt && (
         <Image className="h-full w-full" src={icon} alt={iconAlt} />
       )}
       {text}
-    </button>
+    </Link>
   );
 };
 

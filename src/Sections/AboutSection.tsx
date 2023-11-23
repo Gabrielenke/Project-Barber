@@ -4,10 +4,12 @@ import {
   GetInTouchCard,
   Facebook,
   Linkedin,
-  Twitter,
+  instagram,
+  whatsapp,
 } from "@/assets/export";
 import ActionButton from "@/components/ActionButton";
 import Image from "next/image";
+import Link from "next/link";
 const AboutSection = () => {
   return (
     <>
@@ -20,17 +22,17 @@ const AboutSection = () => {
           className="flex w-[40vw] flex-col gap-10  text-white"
         >
           <div className="border-l-2 border-solid border-primary">
-            <h1 className="ml-2 text-3xl md:text-6xl ">
-              Story of our barbershop
-            </h1>
+            <h1 className="ml-2 text-3xl md:text-6xl ">Nossa Historia</h1>
           </div>
           <p className="max-w-[35vw] text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            praesentium porro minus iure deleniti voluptatem quis, magnam ipsum
-            sit delectus, nihil cumque natus doloribus odit eaque laborum
-            explicabo vitae enim.
+            "Na Barbearia Euler Cortes, nossa jornada começou recentemente, mas
+            já estamos deixando nossa marca no mundo dos cortes impecáveis. Com
+            talento afiado e atendimento personalizado, garantimos uma
+            experiência única. Descubra o charme de uma barba bem cuidada e um
+            corte de cabelo que reflete sua personalidade. Venha fazer parte da
+            nossa história de estilo e tradição, onde cada visita é uma
+            oportunidade de transformação"
           </p>
-          <ActionButton className="w-56" text="Make an Appointment" />
         </div>
         <div className="w-[40vw]">
           <Image
@@ -55,31 +57,30 @@ const AboutSection = () => {
         >
           <div className="border-l-2 border-solid border-primary">
             <p className="ml-2 text-primary">Boardroom</p>
-            <h1 className="ml-2 text-6xl ">Get in touch with us</h1>
+            <h1 className="ml-2 text-6xl ">Entre em contato</h1>
           </div>
           <p className="max-w-[35vw] text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            praesentium porro minus iure deleniti voluptatem quis, magnam ipsum
-            sit delectus, nihil cumque natus doloribus odit eaque laborum
-            explicabo vitae enim.
+            "Estamos prontos para transformar seu visual! Agende seu horário e
+            venha descobrir a excelência em cortes e cuidados masculinos.
           </p>
           <div className="flex gap-10">
-            <ActionButton className="h-24 w-1/2" text="Make an Appointment" />
-            <ActionButton className="h-24 w-1/2" text="Make an Appointment" />
+            <ActionButton className="h-12 w-[40%]" text="Agende seu horario" />
           </div>
           <div className="flex gap-6 ">
-            <div className="h-10 w-10">
-              <Image src={Facebook} alt="" />
-            </div>
-            <div className="h-10 w-10">
-              <Image src={Linkedin} alt="" />
-            </div>
-            <div className="h-10 w-10">
-              <Image src={Twitter} alt="" />
-            </div>
-            <div className="h-10 w-10">
-              <Image src={Facebook} alt="" />
-            </div>
+            <Link
+              href="https://www.instagram.com/eulercortesamericana/"
+              target="_blank"
+              className="h-10 w-10"
+            >
+              <Image src={instagram} alt="" />
+            </Link>
+            <Link
+              href="https://wa.me/19981335512"
+              target="_blank"
+              className="h-10 w-10"
+            >
+              <Image src={whatsapp} alt="" />
+            </Link>
           </div>
         </div>
       </div>

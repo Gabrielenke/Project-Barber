@@ -6,15 +6,11 @@ const ServiceSection = () => {
     <>
       <div className="flex flex-col items-center gap-10 text-white">
         <h1 className="flex flex-col items-center text-center text-6xl font-bold">
-          Our Services
+          Nossos Serviços
           <div className="h-4 w-32 border-b-[3px] border-solid border-orange-400" />
         </h1>
-        <h2 className="text-6xl font-bold">Welcome to our barbershop</h2>
-        <p className="max-w-[700px] text-lg">
-          Founded in 2004,Boarroom salon for men in the authority in mens`s
-          grooming we cater to men who are looking for an elavated barbershop
-          experience
-        </p>
+        <h2 className="text-6xl font-bold">Seja bem vindo</h2>
+        
       </div>
       <section className="mx-auto mt-20 flex w-full flex-col flex-wrap md:h-[60vh] md:w-[60vw]  ">
         <ServiceCard

@@ -9,6 +9,8 @@ import Twitter from "./Twitter.svg";
 import logoo from "./logoo.png";
 import publistory from "./publistory.png";
 import corte from "./corte.jpg";
+import instagram from "./instagram.svg";
+import whatsapp from "./whatsapp.svg";
 export {
   Beard,
   Eyebrown,
@@ -21,4 +23,6 @@ export {
   logoo,
   publistory,
   corte,
+  instagram,
+  whatsapp,
 };
