@@ -8,7 +8,7 @@ const SwiperContent = () => {
         Euler Cortes
       </h1>
       <p className="text-4xl font-bold">
-        Estamos prontos para transformar seu visua
+        Estamos prontos para transformar seu visual
       </p>
 
       <div className="my-20 flex gap-10"></div>

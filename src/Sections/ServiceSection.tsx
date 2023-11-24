@@ -1,5 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
-import { corte } from "@/assets/export";
+import { barboterapia, corte, luzes } from "@/assets/export";
 
 const ServiceSection = () => {
   return (
@@ -10,12 +10,11 @@ const ServiceSection = () => {
           <div className="h-4 w-32 border-b-[3px] border-solid border-orange-400" />
         </h1>
         <h2 className="text-6xl font-bold">Seja bem vindo</h2>
-        
       </div>
       <section className="mx-auto mt-20 flex w-full flex-col flex-wrap md:h-[60vh] md:w-[60vw]  ">
         <ServiceCard
-          title="Haircut"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          title="Corte"
+          description="Descubra cortes impecáveis em nossa barbearia, onde a habilidade encontra estilo."
           altImage="cutColumn"
           image={corte}
           classNameDivWrapper="group relative mr-5 h-[30vh] md:h-[52vh] w-full md:w-[15vw]"
@@ -25,18 +24,18 @@ const ServiceSection = () => {
         />
         <div className="mb-5 mt-10 flex flex-wrap justify-around gap-5 md:mt-0 md:flex-nowrap">
           <ServiceCard
-            title="Haircut"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+            title="Barboterapia"
+            description="Explore a barboterapia em nosso espaço"
             altImage="cut"
-            image={corte}
+            image={barboterapia}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[20vw]"
             className=""
             classNameH1="whitespace-nowrap"
             classNameDescription="hidden flex-col group-hover:ml-3 group-hover:mt-10 group-hover:flex group-hover:text-left"
           />
           <ServiceCard
-            title="Haircut"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+            title="Platinado"
+            description="Descubra o platinado perfeito em nossa barbearia."
             altImage="cut25vw"
             image={corte}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[25vw]"
@@ -47,8 +46,8 @@ const ServiceSection = () => {
         </div>
         <div className="mb-5 mt-10 flex flex-wrap justify-around gap-5 md:mt-0 md:flex-nowrap">
           <ServiceCard
-            title="Haircut"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+            title="Sobrancelha"
+            description="Aperfeiçoe suas sobrancelhas em nossa barbearia. Nossos profissionais garantem um design impecável."
             altImage="cut25vw"
             image={corte}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[25vw]"
@@ -57,10 +56,10 @@ const ServiceSection = () => {
             classNameDescription="hidden group-hover:mt-10 group-hover:block"
           />
           <ServiceCard
-            title="Haircut"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+            title="Luzes"
+            description="Transforme seu visual com nossos cortes personalizados"
             altImage="cut"
-            image={corte}
+            image={luzes}
             classNameDivWrapper="group relative md:h-[25vh] md:w-[20vw]"
             className=""
             classNameH1="whitespace-nowrap"

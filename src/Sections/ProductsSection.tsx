@@ -13,28 +13,28 @@ import ModalComponent from "@/components/ModalComponent";
 const ProductsSection = () => {
   const cards = [
     {
-      img: "https://images.unsplash.com/photo-1533245270348-821d4d5c7514",
+      img: "https://donalcides.com.br/wp-content/uploads/2021/02/pomada-para-cabelo-matte-don-alcides-freak-show-1-scaled.jpg",
     },
     {
-      img: "https://plus.unsplash.com/premium_photo-1664475130052-f58aaf58854e",
+      img: "https://donalcides.com.br/wp-content/uploads/2022/11/pomada-water-soluble-don-alcides-40g.jpg",
     },
     {
-      img: "https://images.unsplash.com/photo-1620331310411-6c0819176107",
+      img: "https://donalcides.com.br/wp-content/uploads/2022/11/kit-pomadas-fiber-water-matte-don-alcides-40g.jpg",
     },
     {
-      img: "https://images.unsplash.com/photo-1675516922615-4fc6a5c1d8fa",
+      img: "https://donalcides.com.br/wp-content/uploads/2020/02/oleo-para-barba-don-alcides-barber-shop-30ml-barba-negra-don-alcides-3437.jpg",
     },
     {
-      img: "https://images.unsplash.com/photo-1527799595389-46c4c3aa0df2",
+      img: "https://donalcides.com.br/wp-content/uploads/2021/02/pomada-para-cabelo-matte-don-alcides-freak-show-1-scaled.jpg",
     },
     {
-      img: "https://images.unsplash.com/photo-1620331317312-74b88bf40907",
+      img: "https://donalcides.com.br/wp-content/uploads/2022/11/pomada-water-soluble-don-alcides-40g.jpg",
     },
     {
-      img: "https://images.unsplash.com/photo-1620331311520-246422fd82f9",
+      img: "https://donalcides.com.br/wp-content/uploads/2022/11/kit-pomadas-fiber-water-matte-don-alcides-40g.jpg",
     },
     {
-      img: "https://images.unsplash.com/photo-1501699169021-3759ee435d66",
+      img: "https://donalcides.com.br/wp-content/uploads/2020/02/oleo-para-barba-don-alcides-barber-shop-30ml-barba-negra-don-alcides-3437.jpg",
     },
   ];
 
@@ -44,12 +44,11 @@ const ProductsSection = () => {
       className="mx-auto  flex h-screen w-[80vw] flex-col gap-10 "
     >
       <div className="border-l-2 border-solid border-primary">
-        <p className="ml-2 text-primary">Products</p>
+        <p className="ml-2 text-primary">Produtos</p>
         <h1 className="ml-2 text-6xl text-white ">
-          Check out our latest products
+          Conheça alguns dos nossos produtos
         </h1>
       </div>
-      {/* <div className=" flex h-[80%] w-full items-center justify-center "> */}
       <div className="flex  sm:w-[60vw] xl:mb-0 xl:w-full">
         <Swiper
           slidesPerView={3}
@@ -81,7 +80,6 @@ const ProductsSection = () => {
             ))}
         </Swiper>
       </div>
-      {/* </div> */}
     </section>
   );
 };

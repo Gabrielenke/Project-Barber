@@ -1,16 +1,10 @@
 "use client";
 
-import {
-  Facebook,
-  Linkedin,
-  Twitter,
-  instagram,
-  whatsapp,
-} from "@/assets/export";
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { instagram, whatsapp } from "@/assets/Social/export";
 
 interface ModalProps {
   image: string;
@@ -23,7 +17,7 @@ export default function ModalComponent({ image, imageAlt }: ModalProps) {
   return (
     <>
       <Button className="bg-primary" onClick={() => setOpenModal(true)}>
-        Mais informacoes
+        Mais informações
       </Button>
       <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header className="">Nome do produto</Modal.Header>
@@ -36,13 +30,18 @@ export default function ModalComponent({ image, imageAlt }: ModalProps) {
             />
             <div className="flex items-center justify-center">
               <div className="flex flex-col items-center gap-2">
-                <p>Mais informacoes</p>
+                <p>Mais informações</p>
                 <div className="flex gap-6">
-                  <Link href="https://wa.me/19981335512" className="h-6 w-6">
+                  <Link
+                    href="https://wa.me/19981335512"
+                    target="_blank"
+                    className="h-6 w-6"
+                  >
                     <Image src={whatsapp} alt="" />
                   </Link>
                   <Link
                     href="https://www.instagram.com/eulercortesamericana/"
+                    target="_blank"
                     className="h-6 w-6"
                   >
                     <Image src={instagram} alt="" />

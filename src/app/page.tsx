@@ -45,7 +45,6 @@ export default function Home() {
           <SwiperSlide className="flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1521490214993-bfb6f7dc096d)] bg-cover bg-center text-center text-white">
             <SwiperContent />
           </SwiperSlide>
-         
         </Swiper>
       </section>
 
@@ -60,7 +59,7 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="mx-auto mt-10 flex h-screen w-[80vw] flex-col  gap-10"
+        className="mx-auto mt-10 flex h-[80vh] w-[80vw] flex-col gap-10"
       >
         <PriceSection />
       </section>

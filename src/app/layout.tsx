@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { NextFont, NextFontWithVariable } from "next/dist/compiled/@next/font";
+import { logoo } from "@/assets/export";
 
 const montserrat: NextFont = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -20,11 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={montserrat.className} lang="en">
-      <body className="relative h-screen bg-[#121212]">
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <>
+      <head>
+        <link rel="icon" href={logoo.src} />
+      </head>
+      <html className={montserrat.className} lang="en">
+        <body className="relative h-screen bg-[#121212]">
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </>
   );
 }

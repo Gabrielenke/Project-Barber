@@ -1,15 +1,9 @@
 import React from "react";
-import {
-  OpeningCard,
-  GetInTouchCard,
-  Facebook,
-  Linkedin,
-  instagram,
-  whatsapp,
-} from "@/assets/export";
+import { OpeningCard, GetInTouchCard } from "@/assets/export";
 import ActionButton from "@/components/ActionButton";
 import Image from "next/image";
 import Link from "next/link";
+import { instagram, whatsapp } from "@/assets/Social/export";
 const AboutSection = () => {
   return (
     <>
@@ -64,7 +58,11 @@ const AboutSection = () => {
             venha descobrir a excelência em cortes e cuidados masculinos.
           </p>
           <div className="flex gap-10">
-            <ActionButton className="h-12 w-[40%]" text="Agende seu horario" />
+            <ActionButton
+              link="https://wa.me/19981335512"
+              className="h-12 w-[40%]"
+              text="Agende seu horario"
+            />
           </div>
           <div className="flex gap-6 ">
             <Link
