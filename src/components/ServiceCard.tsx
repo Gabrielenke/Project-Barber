@@ -1,10 +1,13 @@
+import Image, { StaticImageData } from "next/image";
+
 interface ServiceCardProps {
   title: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   altImage: string;
   classNameDivWrapper: string;
   className?: string;
+  width?: number;
   classNameH1?: string;
   classNameDescription?: string;
 }
@@ -17,12 +20,13 @@ const ServiceCard = ({
   className,
   classNameDescription,
   classNameH1,
+  width,
   classNameDivWrapper,
 }: ServiceCardProps) => {
   return (
     <>
       <div className={`${classNameDivWrapper}`}>
-        <img
+        <Image
           className="h-full w-full object-cover object-center"
           src={image}
           alt={altImage}

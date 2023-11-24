@@ -7,15 +7,11 @@ const SwiperContent = () => {
       <h1 className="mb-2 text-4xl font-bold md:mb-20 md:text-6xl">
         Euler Cortes
       </h1>
-      <p className="text-4xl font-bold">Relax,Look Great,Fell Confident</p>
-      <p className="text-lg text-white/50">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-        Quisquam voluptatum, quibusdam, quia, quod voluptates voluptatem
+      <p className="text-4xl font-bold">
+        Estamos prontos para transformar seu visua
       </p>
-      <div className="my-20 flex gap-10">
-        <ActionButton className="text-white" text="Make an Appointment" />
-        <ActionButton className="text-white" text="Contact us" />
-      </div>
+
+      <div className="my-20 flex gap-10"></div>
       <ScrollAnimation />
     </div>
   );

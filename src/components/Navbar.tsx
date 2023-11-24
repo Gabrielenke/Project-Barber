@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Logo } from "@/assets/export";
+import { logoo } from "@/assets/export";
 import Image from "next/image";
 import ScrollSlider from "./ScrollSlider";
 import ActionButton from "./ActionButton";
 
 const Navbar = () => {
-  const sections = ["home", "services", "about", "contact", "shop"];
+  const sections = ["home", "services", "about", "contact", "products"];
 
   const [activeSection, setActiveSection] = useState(sections[0]);
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -75,7 +75,7 @@ const Navbar = () => {
       >
         <nav className="flex items-center">
           <Link href="/">
-            <Image className="h-10 w-10" src={Logo} alt="Logo" />
+            <Image className="h-10 w-10" src={logoo} alt="Logo" />
           </Link>
         </nav>
         <nav className="hidden items-center gap-10 lg:flex">
@@ -96,12 +96,11 @@ const Navbar = () => {
         </nav>
         <nav className="hidden items-center gap-5 lg:flex">
           <Link href="/">Brazil</Link>
-          <Link href="/">
             <ActionButton
+              link="https://wa.me/19981335512"
               className="rounded-lg border-2 border-solid border-primary !bg-primary/10"
-              text="+55 19 xxxx-xxxx"
+              text="+55 19 98133-5512"
             />
-          </Link>
         </nav>
         <button
           className="text-2xl focus:outline-none lg:hidden"
@@ -125,12 +124,11 @@ const Navbar = () => {
           ))}
           <nav className="flex items-center justify-around px-4">
             <Link href="/">Brazil</Link>
-            <Link className="flex items-center" href="/">
               <ActionButton
+              link="https://wa.me/19981335512"
                 className="rounded-lg border-2 border-solid border-primary !bg-primary/10"
-                text="+55 19 xxxx-xxxx"
+                text="+55 19 98133-5512"
               />
-            </Link>
           </nav>
         </nav>
       )}
