@@ -19,13 +19,13 @@ const AboutSection = () => {
             <h1 className="ml-2 text-3xl md:text-6xl ">Nossa Historia</h1>
           </div>
           <p className="max-w-[35vw] text-lg">
-            "Na Barbearia Euler Cortes, nossa jornada começou recentemente, mas
+            Na Barbearia Euler Cortes, nossa jornada começou recentemente, mas
             já estamos deixando nossa marca no mundo dos cortes impecáveis. Com
             talento afiado e atendimento personalizado, garantimos uma
             experiência única. Descubra o charme de uma barba bem cuidada e um
             corte de cabelo que reflete sua personalidade. Venha fazer parte da
             nossa história de estilo e tradição, onde cada visita é uma
-            oportunidade de transformação"
+            oportunidade de transformação
           </p>
         </div>
         <div className="w-[40vw]">
