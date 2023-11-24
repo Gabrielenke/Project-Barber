@@ -1,6 +1,6 @@
 import GetInTouchCard from "./GetInTouchCard.svg";
 import OpeningCard from "./OpeningCard.svg";
-import logoo from "./logoo.png";
+import logoo from "./logo.png";
 import publistory from "./publistory.png";
 import corte from "./corte.jpg";
 import luzes from "./Luzes.jpeg";

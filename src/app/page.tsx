@@ -59,7 +59,7 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="mx-auto mt-10 flex h-[80vh] w-[80vw] flex-col gap-10"
+        className="mx-auto mt-10 flex h-[80vh] w-[80vw] flex-col  gap-10"
       >
         <PriceSection />
       </section>
