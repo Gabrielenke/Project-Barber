@@ -54,7 +54,7 @@ const AboutSection = () => {
             <h1 className="ml-2 text-6xl ">Entre em contato</h1>
           </div>
           <p className="max-w-[35vw] text-lg">
-            "Estamos prontos para transformar seu visual! Agende seu horário e
+            Estamos prontos para transformar seu visual! Agende seu horário e
             venha descobrir a excelência em cortes e cuidados masculinos.
           </p>
           <div className="flex gap-10">
